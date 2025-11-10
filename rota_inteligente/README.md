@@ -9,8 +9,6 @@ A Sabor Express enfrenta atrasos e altos custos por **rotas manuais**. O objetiv
 3. **A*** como buscador de caminho entre pares; para visitar todos os pontos do cluster, usamos **heurística gulosa** (nearest neighbor) para ordenar as visitas e **A*** para cada trecho.
 4. Métricas: km por cluster e total.
 
-> Observação: As coordenadas são **aproximadas** para fins acadêmicos, baseadas no entorno da **Av. Braz Leme / Santana** e na pizzaria de referência.
-
 ## Algoritmos
 - **A*** (heurístico: distância haversine ao alvo) — encontra menor caminho entre dois nós.
 - **K-Means** (não supervisionado) — cria zonas de entrega.
