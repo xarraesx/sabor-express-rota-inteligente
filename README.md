@@ -9,6 +9,8 @@ A Sabor Express enfrenta atrasos e altos custos por **rotas manuais**. O objetiv
 3. **A*** como buscador de caminho entre pares; para visitar todos os pontos do cluster, usamos **heurística gulosa** (nearest neighbor) para ordenar as visitas e **A*** para cada trecho.
 4. Métricas: km por cluster e total.
 
+> Observação: As coordenadas são **aproximadas** para fins acadêmicos, baseadas no entorno da **Av. Braz Leme / Santana** e na pizzaria de referência.
+
 ## Algoritmos
 - **A*** (heurístico: distância haversine ao alvo) — encontra menor caminho entre dois nós.
 - **K-Means** (não supervisionado) — cria zonas de entrega.
@@ -27,5 +29,20 @@ A Sabor Express enfrenta atrasos e altos custos por **rotas manuais**. O objetiv
 /docs/video_pitch.md    # Roteiro de 4 minutos
 README.md
 ```
+
+## Como executar
+```bash
+python3 src/main.py
+```
+
+## Dependências
+A versão enviada inclui implementação **nativa** (sem sklearn/networkx). Requer apenas:
+- Python 3.10+
+- numpy, pandas, matplotlib (comuns em ambientes acadêmicos)
+
+## Limitações e Melhorias
+- Grafo completo (não usa sentido de vias/semáforos).
+- K fixo (=3). Pode-se calibrar por **elbow/silhouette**.
+- Sem tráfego em tempo real. Futuro: APIs de mapas, **algoritmos genéticos** e **reinforcement learning** para roteamento dinâmico.
 
 
