@@ -28,17 +28,4 @@ A Sabor Express enfrenta atrasos e altos custos por **rotas manuais**. O objetiv
 README.md
 ```
 
-## Como executar
-```bash
-python3 src/main.py
-```
 
-## Dependências
-A versão enviada inclui implementação **nativa** (sem sklearn/networkx). Requer apenas:
-- Python 3.10+
-- numpy, pandas, matplotlib (comuns em ambientes acadêmicos)
-
-## Limitações e Melhorias
-- Grafo completo (não usa sentido de vias/semáforos).
-- K fixo (=3). Pode-se calibrar por **elbow/silhouette**.
-- Sem tráfego em tempo real. Futuro: APIs de mapas, **algoritmos genéticos** e **reinforcement learning** para roteamento dinâmico.
